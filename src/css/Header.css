@@ -1,0 +1,21 @@
+.displayofHeaders {
+  display: flex;
+  flex-direction: column;
+}
+
+.ChooseSite {
+  background-color: aquamarine;
+}
+
+.menuInIndex {
+  background-color: antiquewhite;
+}
+
+.citation {
+  align-items: right;
+}
+
+.mainPage {
+  display: flex;
+  flex-direction: row;
+}

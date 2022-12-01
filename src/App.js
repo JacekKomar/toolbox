@@ -13,7 +13,6 @@ function App() {
           <Header />
           <img src="" alt="" />
           <p>opis</p>
-          <button className="btn btn-primary">Test</button>
 
           <Switch>
             <Route path="/calculator">
