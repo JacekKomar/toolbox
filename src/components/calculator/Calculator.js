@@ -2,6 +2,6 @@ import React from "react";
 
 export default class Calculator extends React.Component {
   render() {
-    return <h1>Calculator</h1>;
+    return <h1>Calculatwwor</h1>;
   }
 }

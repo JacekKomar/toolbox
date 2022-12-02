@@ -1,10 +1,10 @@
 .displayofHeaders {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .ChooseSite {
-  background-color: aquamarine;
+  background-color: rgb(180, 144, 120);
 }
 
 .menuInIndex {

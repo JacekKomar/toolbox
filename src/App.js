@@ -15,8 +15,8 @@ function App() {
           <p>opis</p>
 
           <Switch>
-            <Route path="/calculator">
-              <Calculator />
+            <Route path="./components/calculator/calculator">
+              <Calculator a />
             </Route>
             <Route path="/calendar">
               <Calendar />
