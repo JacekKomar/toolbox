@@ -36,10 +36,6 @@ const quotes = [
   {
     quote:
       "Umysł potrzebuje zaś książek, podobnie jak miecz potrzebuje kamienia do ostrzenia.",
-    author: "J. I. Kraszewski",
-  },
-  {
-    quote: "Ludzie boją się zmian, nawet na lepsze.",
     author: "George R.R. Martin",
   },
 ];

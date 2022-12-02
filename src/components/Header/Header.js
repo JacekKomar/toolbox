@@ -8,11 +8,6 @@ import calendarIcon from "./HeaderImages/calendarIcon.png";
 import dayPlanIcon from "./HeaderImages/dayPlanIcon.png";
 import weatherIcon from "./HeaderImages/weatherIcon.png";
 
-const calendar = () => {
-  // 👇️ navigate to /contacts
-  ("/calendar");
-};
-
 export default class Header extends React.Component {
   render() {
     return (
