@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../../css/Header.css";
-import "../../css/common.css";
+import "../../css/Header.scss";
+import "../../css/common.scss";
 
 import calculatorIcon from "./HeaderImages/calculatorIcon.png";
 import calendarIcon from "./HeaderImages/calendarIcon.png";
