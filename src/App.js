@@ -22,6 +22,7 @@ function App() {
               <Calendar />
             </Route>
             <Route path="/dayplan">
+              <p>test</p>
               <DayPlan />
             </Route>
             <Route path="/">
