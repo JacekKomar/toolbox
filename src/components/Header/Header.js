@@ -8,6 +8,11 @@ import calendarIcon from "./HeaderImages/calendarIcon.png";
 import dayPlanIcon from "./HeaderImages/dayPlanIcon.png";
 import weatherIcon from "./HeaderImages/weatherIcon.png";
 
+const calendar = () => {
+  // 👇️ navigate to /contacts
+  ("/calendar");
+};
+
 export default class Header extends React.Component {
   render() {
     return (
@@ -17,8 +22,8 @@ export default class Header extends React.Component {
         <div className="row">
           <div className="mainPage">
             <div className="displayofHeaders p-2">
-              <button
-                to="./components/calculator/calculator"
+              <a
+                href="/calculator"
                 className="ChooseSite col-md-3 col-sm-6 p-4 mr-1 border border-dark rounded brightened"
               >
                 <h1 className="nameParagraf text-center">
@@ -30,18 +35,24 @@ export default class Header extends React.Component {
                   Kalkulator to urządzenie, które wyręczy cię od wykonywania
                   obliczeń matematycznych.
                 </p>
-              </button>
+              </a>
 
-              <button className=" ChooseSite col-md-3 col-sm-6 p-4 mr-1 border border-dark rounded brightened">
+              <a
+                href="/calendar"
+                className=" ChooseSite col-md-3 col-sm-6 p-4 mr-1 border border-dark rounded brightened"
+              >
                 <h1 className="nameParagraf text-center">Wybierz: Kalendarz</h1>
                 <img className="img-fluid" src={calendarIcon}></img>
                 <p className="descriptionOfLinks text-center mt-2">
                   kalendarz pozwala przejżeć poszczególne dni i dodać do nich
                   wydarzenia.
                 </p>
-              </button>
+              </a>
 
-              <button className="ChooseSite col-md-3 col-sm-6 p-4 mr-1 border border-dark rounded brightened">
+              <a
+                href="/dayPlan"
+                className="ChooseSite col-md-3 col-sm-6 p-4 mr-1 border border-dark rounded brightened"
+              >
                 <h1 className="nameParagraf text-center">Wybierz: Plan dnia</h1>
                 <img className="img-fluid" src={dayPlanIcon} />
                 <p className="descriptionOfLinks text-center mt-2">
@@ -49,9 +60,12 @@ export default class Header extends React.Component {
                   to tutaj możesz ułożyć swój indywidualny i dostosowany do
                   swoich potrzeb plan dnia.
                 </p>
-              </button>
+              </a>
 
-              <button className="ChooseSite col-md-3 col-sm-6 mr-1 p-4 border border-dark rounded brightened">
+              <a
+                href="/weather"
+                className="ChooseSite col-md-3 col-sm-6 mr-1 p-4 border border-dark rounded brightened"
+              >
                 <h1 className="nameParagraf text-center">
                   Wybierz: Aktualna pogoda
                 </h1>
@@ -61,7 +75,7 @@ export default class Header extends React.Component {
                   Sprawdź aktualną pogodę panującą w dowolnym miejscu na
                   świecie.
                 </p>
-              </button>
+              </a>
             </div>
           </div>
         </div>

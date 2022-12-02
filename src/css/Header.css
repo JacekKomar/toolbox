@@ -5,6 +5,11 @@
 
 .ChooseSite {
   background-color: rgb(180, 144, 120);
+  color: black;
+}
+.ChooseSite:hover {
+  text-decoration: none;
+  color: black;
 }
 
 .menuInIndex {
