@@ -17,8 +17,8 @@ export default class Header extends React.Component {
         <div className="row">
           <div className="mainPage">
             <div className="displayofHeaders p-2">
-              <a
-                href="/calculator"
+              <Link
+                to="/calculator"
                 className="ChooseSite col-md-3 col-sm-6 p-4 mr-1 border border-dark rounded brightened"
               >
                 <h1 className="nameParagraf text-center">
@@ -30,10 +30,10 @@ export default class Header extends React.Component {
                   Kalkulator to urządzenie, które wyręczy cię od wykonywania
                   obliczeń matematycznych.
                 </p>
-              </a>
+              </Link>
 
-              <a
-                href="/calendar"
+              <Link
+                to="/calendar"
                 className=" ChooseSite col-md-3 col-sm-6 p-4 mr-1 border border-dark rounded brightened"
               >
                 <h1 className="nameParagraf text-center">Wybierz: Kalendarz</h1>
@@ -42,10 +42,10 @@ export default class Header extends React.Component {
                   kalendarz pozwala przejżeć poszczególne dni i dodać do nich
                   wydarzenia.
                 </p>
-              </a>
+              </Link>
 
-              <a
-                href="/dayPlan"
+              <Link
+                to="/dayPlan"
                 className="ChooseSite col-md-3 col-sm-6 p-4 mr-1 border border-dark rounded brightened"
               >
                 <h1 className="nameParagraf text-center">Wybierz: Plan dnia</h1>
@@ -55,10 +55,10 @@ export default class Header extends React.Component {
                   to tutaj możesz ułożyć swój indywidualny i dostosowany do
                   swoich potrzeb plan dnia.
                 </p>
-              </a>
+              </Link>
 
-              <a
-                href="/weather"
+              <Link
+                to="/weather"
                 className="ChooseSite col-md-3 col-sm-6 mr-1 p-4 border border-dark rounded brightened"
               >
                 <h1 className="nameParagraf text-center">
@@ -70,7 +70,7 @@ export default class Header extends React.Component {
                   Sprawdź aktualną pogodę panującą w dowolnym miejscu na
                   świecie.
                 </p>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
