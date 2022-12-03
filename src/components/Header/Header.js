@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import "../../css/Header.scss";
 import "../../css/common.scss";
 
+import "./actualHour.js";
+
 import calculatorIcon from "./HeaderImages/calculatorIcon.png";
 import calendarIcon from "./HeaderImages/calendarIcon.png";
 import dayPlanIcon from "./HeaderImages/dayPlanIcon.png";
@@ -77,6 +79,7 @@ export default class Header extends React.Component {
         <div className="citation  text-right">
           {" Cytat dnia"}
           <p>cos tam cos tam</p>
+          <div id="root" className="actualHourCss"></div>
         </div>
       </div>
     );

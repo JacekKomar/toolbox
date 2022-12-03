@@ -2,6 +2,7 @@ import Calculator from "./components/calculator/Calculator";
 import Calendar from "./components/calendar/Calendar";
 import DayPlan from "./components/dayPlan/DayPlan";
 import Weather from "./components/weather/weather";
+
 import { Switch, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
 

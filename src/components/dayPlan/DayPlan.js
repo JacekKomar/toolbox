@@ -7,14 +7,7 @@ export default function DayPlan() {
   return (
     <div className="container">
       <div className="dayPlanTable rounded border border-dark text-center">
-        <h1>
-          Twój plan dnia:
-          {/* <div>{mojText}</div> */}
-          {/* <input
-          type="text"
-          onChange={(event) => ustawText(event.target.value)}
-        ></input> */}
-        </h1>
+        <h1>Twój plan dnia:</h1>
       </div>
 
       <div className="dayPlanTable rounded border border-dark mt-2">
