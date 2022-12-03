@@ -12,7 +12,6 @@ function App() {
         <div className="choicePage">
           <Header />
           <img src="" alt="" />
-          <p>opis</p>
 
           <Switch>
             <Route path="/calculator">
