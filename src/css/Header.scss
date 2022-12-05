@@ -19,6 +19,7 @@
 
 .citation {
   align-items: right;
+  margin-left: 800px;
 }
 
 .mainPage {
@@ -28,4 +29,9 @@
 
 .brightened:hover {
   filter: brightness(1.4);
+}
+
+.ClockAndCitation {
+  display: flex;
+  flex-direction: row;
 }

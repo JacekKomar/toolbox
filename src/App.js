@@ -2,7 +2,7 @@ import Calculator from "./components/calculator/Calculator";
 import Calendar from "./components/calendar/Calendar";
 import DayPlan from "./components/dayPlan/DayPlan";
 import Weather from "./components/weather/weather";
-
+import "./css/Header.scss";
 import Clock from "./components/Header/Clock";
 import { Switch, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
@@ -14,10 +14,16 @@ function App() {
         <div className="choicePage">
           <Header />
           <img src="" alt="" />
-          <div className="App">
-            <Clock></Clock>
-          </div>
+          <div className="ClockAndCitation">
+            <div className="App">
+              <Clock></Clock>
+            </div>
 
+            <div className="citation">
+              {" Cytat dnia"}
+              <p>cos tam cos tam</p>
+            </div>
+          </div>
           <Switch>
             <Route path="/calculator">
               <Calculator a />
