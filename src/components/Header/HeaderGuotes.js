@@ -39,3 +39,5 @@ const quotes = [
     author: "George R.R. Martin",
   },
 ];
+
+export default quotes;

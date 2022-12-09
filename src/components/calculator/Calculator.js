@@ -139,9 +139,8 @@ function Calculator() {
       <div className="calculatorTable rounded border border-dark text-center">
         <h1> Kalkulator </h1>
       </div>
-      <div className="calculatorTable rounded border border-dark mt-2">
-        tabela
-        <div className="calculator-grid">
+      <div className="calculatorTable rounded border border-dark mt-2 mb-5">
+        <div className="calculator-grid p-5">
           <div className="output">
             <div className="previous-operand">
               {previousOperand}

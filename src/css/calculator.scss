@@ -4,10 +4,10 @@
 
 .calculator-grid {
   display: grid;
-  margin-top: 2rem;
-  grid-template-columns: repeat(4, 6rem);
+
+  grid-template-columns: repeat(4, 7rem);
   grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
-  justify-content: center;
+  justify-content: right;
 }
 
 .span-two {
@@ -16,7 +16,7 @@
 
 .output {
   grid-column: 1/-1;
-  background-color: rgb(170, 169, 169);
+  background-color: rgb(201, 132, 107);
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -32,7 +32,7 @@
 
 .output .current-operand {
   color: azure;
-  font-size: 2.5rem;
+  // font-size: 2.5rem;
 }
 
 .calculator-grid > button {

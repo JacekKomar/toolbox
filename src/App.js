@@ -6,6 +6,7 @@ import "./css/Header.scss";
 import Clock from "./components/Header/Clock";
 import { Switch, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
+import Citation from "./components/Header/Citation.js";
 
 function App() {
   return (
@@ -28,6 +29,10 @@ function App() {
             <Route path="/calculator">
               <Calculator a />
             </Route>
+            <Route path="/citation">
+              <Citation />
+            </Route>
+
             <Route path="/calendar">
               <Calendar />
             </Route>
