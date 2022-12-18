@@ -3,8 +3,7 @@ import "../../css/weather.scss";
 import cityIcon from "./weatherImages/cityIcon.png";
 import axios from "axios";
 
-export default function Weather() {
-  const [mojText, ustawText] = React.useState("");
+function Weather() {
   const [data, setData] = useState({});
   const [location, setLocation] = useState("");
 
@@ -22,24 +21,39 @@ export default function Weather() {
 
   return (
     <div className="container mb-5">
-      <p>Podaj nazwę miejscowości:</p>
-
       <h1>
         <input
           value={location}
-          className="weatherTable rounded border border-dark col-12"
-          type="text"
-          onChange={(event) => ustawText(event.target.value)}
+          onChange={(event) => setLocation(event.target.value)}
           onKeyPress={searchLocation}
+          placeholder=" Wpisz nazwę miejscowości"
+          type="text"
+          className="weatherTable rounded border border-dark col-12"
         ></input>
       </h1>
 
       <div className="weatherTable rounded border border-dark">
-        <h1>
-          <div> {mojText} c </div>
-        </h1>
+        <h1>{data.name} c</h1>
+
+        <div className="temp">
+          {data.main ? <h1>{data.main.temp}</h1> : null}
+        </div>
+
+        <div className="DescriptionWeather">
+          {data.weather ? <p>{data.weather[0].main}</p> : null}
+        </div>
+
+        <div className="feelsLike">
+          {/* <h1> {data.main.temp} pizdzi </h1>{" "} */}
+        </div>
+
+        <div className="Humdity">procent</div>
+        <div className="wind">wiatry</div>
+
         <img className="img-fluid" src={cityIcon}></img>
       </div>
     </div>
   );
 }
+
+export default Weather;
