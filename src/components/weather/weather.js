@@ -33,23 +33,30 @@ function Weather() {
       </h1>
 
       <div className="weatherTable rounded border border-dark">
-        <h1>{data.name} c</h1>
-
         <div className="temp">
-          {data.main ? <h1>{data.main.temp}</h1> : null}
+          {" "}
+          Temperatura:
+          {data.main ? <h1>{data.main.temp.toFixed()}</h1> : null}
         </div>
 
-        <div className="DescriptionWeather">
-          {data.weather ? <p>{data.weather[0].main}</p> : null}
-        </div>
+        <h1>
+          {" "}
+          Odczuwalna temperatura:{" "}
+          {data.main ? <p>{data.main.feels_like} c</p> : null}{" "}
+        </h1>
 
         <div className="feelsLike">
           {/* <h1> {data.main.temp} pizdzi </h1>{" "} */}
         </div>
 
-        <div className="Humdity">procent</div>
-        <div className="wind">wiatry</div>
-
+        <div className="Humdity">
+          <p> Wilgotność:</p>
+          {data.main ? <p className="bold">{data.main.humidity}%</p> : null}
+        </div>
+        <div className="wind">Szybkość wiatru:</div>
+        {data.wind ? (
+          <p className="bold">{data.wind.speed.toFixed()} MPH</p>
+        ) : null}
         <img className="img-fluid" src={cityIcon}></img>
       </div>
     </div>
