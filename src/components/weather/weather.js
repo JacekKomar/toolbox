@@ -7,7 +7,7 @@ function Weather() {
   const [data, setData] = useState({});
   const [location, setLocation] = useState("");
 
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=imperial&appid=895284fb2d2c50a520ea537456963d9c`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=895284fb2d2c50a520ea537456963d9c`;
 
   const searchLocation = (event) => {
     if (event.key === "Enter") {
@@ -36,13 +36,13 @@ function Weather() {
         <div className="temp">
           {" "}
           Temperatura:
-          {data.main ? <h1>{data.main.temp.toFixed()}</h1> : null}
+          {data.main ? <h1>{data.main.temp.toFixed()} ℃</h1> : null}
         </div>
 
         <h1>
           {" "}
           Odczuwalna temperatura:{" "}
-          {data.main ? <p>{data.main.feels_like} c</p> : null}{" "}
+          {data.main ? <p>{data.main.feels_like} ℃</p> : null}
         </h1>
 
         <div className="feelsLike">
