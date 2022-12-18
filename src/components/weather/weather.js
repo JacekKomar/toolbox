@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../../css/weather.scss";
 import cityIcon from "./weatherImages/cityIcon.png";
-// import axios from "axios";
+import axios from "axios";
 
 export default function Weather() {
   const [mojText, ustawText] = React.useState("");
@@ -16,6 +16,7 @@ export default function Weather() {
         setData(response.data);
         console.log(response.data);
       });
+      setLocation("");
     }
   };
 
@@ -25,9 +26,11 @@ export default function Weather() {
 
       <h1>
         <input
+          value={location}
           className="weatherTable rounded border border-dark col-12"
           type="text"
           onChange={(event) => ustawText(event.target.value)}
+          onKeyPress={searchLocation}
         ></input>
       </h1>
 
