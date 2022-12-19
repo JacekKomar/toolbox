@@ -7,23 +7,18 @@ function Weather() {
     <div className="container mb-5">
       <div className="weatherTableButNoColor rounded border border-dark mb-2 weatherButtons">
         <Link to="/OpenWeather" className="">
-          <button className="col-3 weatherButton  rounded border border-dark brightenedDark">
-            <h1> OpenWeather </h1>
+          <button className="col-4 weatherButton  rounded border border-dark brightenedDark">
+            <h1> Open Weather </h1>
           </button>
         </Link>
         <Link to="/WeatherApi">
-          <button className="col-3 weatherButton  rounded border border-dark brightenedDark">
+          <button className="col-4 weatherButton  rounded border border-dark brightenedDark">
             <h1> Weather Api </h1>
           </button>
         </Link>
         <Link to="/Weatherstack">
-          <button className="col-3 weatherButton  rounded border border-dark brightenedDark">
+          <button className="col-4 weatherButton  rounded border border-dark brightenedDark">
             <h1> Weatherstack </h1>
-          </button>
-        </Link>
-        <Link to="/OpenMeteo">
-          <button className="col-3 weatherButton  rounded border border-dark brightenedDark">
-            <h1> Open Meteo </h1>
           </button>
         </Link>
       </div>

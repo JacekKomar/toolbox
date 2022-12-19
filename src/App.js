@@ -9,7 +9,7 @@ import Header from "./components/Header/Header";
 import Citation from "./components/Header/Citation.js";
 import WeatherFromOpenWeather from "./components/weather/OpenWeather.js";
 import Weatherstack from "./components/weather/Weatherstack.js";
-import WeatherFromOpenMeteo from "./components/weather/OpenMeteo";
+
 import WeatherFromWeatherApi from "./components/weather/WeatherApi";
 
 function App() {
@@ -45,10 +45,6 @@ function App() {
             </Route>
             <Route path="/weather">
               <Weather />
-            </Route>
-
-            <Route path="/OpenMeteo">
-              <WeatherFromOpenMeteo />
             </Route>
 
             <Route path="/Weatherstack">
