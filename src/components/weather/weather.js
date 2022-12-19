@@ -21,7 +21,7 @@ function Weather() {
 
   return (
     <div className="container mb-5">
-      <div className="weatherTable rounded border border-dark mb-2 weatherButtons">
+      <div className="weatherTableButNoColor rounded border border-dark mb-2 weatherButtons">
         <button className="col-3 weatherButton  rounded border border-dark brightenedDark">
           <h1> OpenWeather </h1>
         </button>
@@ -52,7 +52,7 @@ function Weather() {
           {data ? <p> {data.name}</p> : null}
           {data.sys ? (
             <p>
-              {" "}
+              {"  "}
               {"("}
               {data.sys.country}
               {")"}
