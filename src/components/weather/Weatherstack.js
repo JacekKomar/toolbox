@@ -91,7 +91,7 @@ function Weatherstack() {
           <h2>
             Szybkość wiatru:
             {data.current ? (
-              <p className="bold">{data.current.wind_speed.toFixed()} MPH</p>
+              <p className="bold">{data.current.wind_speed.toFixed()} KPH</p>
             ) : null}
             <img className="img-fluid" src={cityIcon}></img>
           </h2>

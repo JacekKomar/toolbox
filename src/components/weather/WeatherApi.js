@@ -7,7 +7,7 @@ function WeatherFromWeatherApi() {
   const [data, setData] = useState({});
   const [location, setLocation] = useState("");
 
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=895284fb2d2c50a520ea537456963d9c`;
+  const url = `http://api.weatherapi.com/v1/current.json?key=f615d211edcf4471839172333221912&q=${location}&aqi=no`;
 
   const searchLocation = (event) => {
     if (event.key === "Enter") {
@@ -49,12 +49,12 @@ function WeatherFromWeatherApi() {
       <div className="weatherTable rounded border border-dark mb-2">
         <h1 className="nameAndCountryWeather">
           Aktualna pogoda dla:
-          {data ? <p> {data.name}</p> : null}
-          {data.sys ? (
+          {data.location ? <p> {data.location.name}</p> : null}
+          {data.location ? (
             <p>
               {"  "}
               {"("}
-              {data.sys.country}
+              {data.location.country}
               {")"}
             </p>
           ) : null}
@@ -65,29 +65,31 @@ function WeatherFromWeatherApi() {
         <div className="temp">
           <h2>
             {" "}
-            Temperatura:
-            {data.main ? <p>{data.main.temp.toFixed()} ℃</p> : null}
+            Temperatura w °C:
+            {data.current ? <p>{data.current.temp_c.toFixed()} °C</p> : null}
           </h2>
         </div>
 
         <h2>
           {" "}
-          Odczuwalna temperatura:{" "}
-          {data.main ? <p>{data.main.feels_like} ℃</p> : null}
+          Temperatura w °F:{" "}
+          {data.current ? <p>{data.current.temp_f} °F</p> : null}
         </h2>
 
         <div className="Humdity">
           <h2>
             Wilgotność:
-            {data.main ? <p className="bold">{data.main.humidity}%</p> : null}
+            {data.current ? (
+              <p className="bold">{data.current.humidity}%</p>
+            ) : null}
           </h2>
         </div>
 
         <div className="wind">
           <h2>
             Szybkość wiatru:
-            {data.wind ? (
-              <p className="bold">{data.wind.speed.toFixed()} MPH</p>
+            {data.current ? (
+              <p className="bold">{data.current.wind_mph.toFixed()} MPH</p>
             ) : null}
             <img className="img-fluid" src={cityIcon}></img>
           </h2>
