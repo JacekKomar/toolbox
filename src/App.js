@@ -7,6 +7,10 @@ import Clock from "./components/Header/Clock";
 import { Switch, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Citation from "./components/Header/Citation.js";
+import WeatherFromOpenWeather from "./components/weather/OpenWeather.js";
+import WeatherFromIMGW from "./components/weather/IMGW.js";
+import WeatherFromOpenMeteo from "./components/weather/OpenMeteo";
+import WeatherFromWeatherApi from "./components/weather/WeatherApi";
 
 function App() {
   return (
@@ -42,6 +46,23 @@ function App() {
             <Route path="/weather">
               <Weather />
             </Route>
+
+            <Route path="/OpenMeteo">
+              <WeatherFromOpenMeteo />
+            </Route>
+
+            <Route path="/IMGW">
+              <WeatherFromIMGW />
+            </Route>
+
+            <Route path="/OpenWeather">
+              <WeatherFromOpenWeather />
+            </Route>
+
+            <Route path="/WeatherApi">
+              <WeatherFromWeatherApi />
+            </Route>
+
             <Route path="/">
               <h1>Witaj podróżniku!</h1>
             </Route>
