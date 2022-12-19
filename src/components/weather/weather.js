@@ -31,33 +31,41 @@ function Weather() {
           className="weatherTable rounded border border-dark col-12"
         ></input>
       </h1>
+      <div className="weatherTable rounded border border-dark mb-2">
+        <h1> Aktualna pogoda dla: {location}</h1>
+      </div>
 
       <div className="weatherTable rounded border border-dark">
         <div className="temp">
-          {" "}
-          Temperatura:
-          {data.main ? <h1>{data.main.temp.toFixed()} ℃</h1> : null}
+          <h2>
+            {" "}
+            Temperatura:
+            {data.main ? <p>{data.main.temp.toFixed()} ℃</p> : null}
+          </h2>
         </div>
 
-        <h1>
+        <h2>
           {" "}
           Odczuwalna temperatura:{" "}
           {data.main ? <p>{data.main.feels_like} ℃</p> : null}
-        </h1>
-
-        <div className="feelsLike">
-          {/* <h1> {data.main.temp} pizdzi </h1>{" "} */}
-        </div>
+        </h2>
 
         <div className="Humdity">
-          <p> Wilgotność:</p>
-          {data.main ? <p className="bold">{data.main.humidity}%</p> : null}
+          <h2>
+            Wilgotność:
+            {data.main ? <p className="bold">{data.main.humidity}%</p> : null}
+          </h2>
         </div>
-        <div className="wind">Szybkość wiatru:</div>
-        {data.wind ? (
-          <p className="bold">{data.wind.speed.toFixed()} MPH</p>
-        ) : null}
-        <img className="img-fluid" src={cityIcon}></img>
+
+        <div className="wind">
+          <h2>
+            Szybkość wiatru:
+            {data.wind ? (
+              <p className="bold">{data.wind.speed.toFixed()} MPH</p>
+            ) : null}
+            <img className="img-fluid" src={cityIcon}></img>
+          </h2>
+        </div>
       </div>
     </div>
   );
