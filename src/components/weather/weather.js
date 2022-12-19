@@ -32,7 +32,18 @@ function Weather() {
         ></input>
       </h1>
       <div className="weatherTable rounded border border-dark mb-2">
-        <h1> Aktualna pogoda dla: {location}</h1>
+        <h1 className="nameAndCountryWeather">
+          Aktualna pogoda dla:
+          {data ? <p> {data.name}</p> : null}
+          {data.sys ? (
+            <p>
+              {" "}
+              {"("}
+              {data.sys.country}
+              {")"}
+            </p>
+          ) : null}
+        </h1>
       </div>
 
       <div className="weatherTable rounded border border-dark">
