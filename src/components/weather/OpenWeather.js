@@ -29,7 +29,7 @@ function WeatherFromOpenWeather() {
           <h1> Weather Api </h1>
         </button>
         <button className="col-3 weatherButton  rounded border border-dark brightenedDark">
-          <h1> IMGW </h1>
+          <h1> Weatherstack </h1>
         </button>
         <button className="col-3 weatherButton  rounded border border-dark brightenedDark">
           <h1> Open Meteo </h1>

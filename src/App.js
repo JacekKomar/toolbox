@@ -8,7 +8,7 @@ import { Switch, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Citation from "./components/Header/Citation.js";
 import WeatherFromOpenWeather from "./components/weather/OpenWeather.js";
-import WeatherFromIMGW from "./components/weather/IMGW.js";
+import Weatherstack from "./components/weather/Weatherstack.js";
 import WeatherFromOpenMeteo from "./components/weather/OpenMeteo";
 import WeatherFromWeatherApi from "./components/weather/WeatherApi";
 
@@ -51,8 +51,8 @@ function App() {
               <WeatherFromOpenMeteo />
             </Route>
 
-            <Route path="/IMGW">
-              <WeatherFromIMGW />
+            <Route path="/Weatherstack">
+              <Weatherstack />
             </Route>
 
             <Route path="/OpenWeather">

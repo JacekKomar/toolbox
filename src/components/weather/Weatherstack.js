@@ -3,11 +3,11 @@ import "../../css/weather.scss";
 import cityIcon from "./weatherImages/cityIcon.png";
 import axios from "axios";
 
-function WeatherFromIMGW() {
+function Weatherstack() {
   const [data, setData] = useState({});
   const [location, setLocation] = useState("");
 
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=895284fb2d2c50a520ea537456963d9c`;
+  const url = `http://api.weatherstack.com/current?access_key=cf43e74439b1c045ae9059aa7dbea426&query=${location}`;
 
   const searchLocation = (event) => {
     if (event.key === "Enter") {
@@ -29,7 +29,7 @@ function WeatherFromIMGW() {
           <h1> Weather Api </h1>
         </button>
         <button className="col-3 weatherButton  rounded border border-dark brightenedDark">
-          <h1> IMGW </h1>
+          <h1> Weatherstack</h1>
         </button>
         <button className="col-3 weatherButton  rounded border border-dark brightenedDark">
           <h1> Open Meteo </h1>
@@ -49,12 +49,12 @@ function WeatherFromIMGW() {
       <div className="weatherTable rounded border border-dark mb-2">
         <h1 className="nameAndCountryWeather">
           Aktualna pogoda dla:
-          {data ? <p> {data.name}</p> : null}
-          {data.sys ? (
+          {data.location ? <p> {data.location.name}</p> : null}
+          {data.location ? (
             <p>
               {"  "}
               {"("}
-              {data.sys.country}
+              {data.location.country}
               {")"}
             </p>
           ) : null}
@@ -66,28 +66,32 @@ function WeatherFromIMGW() {
           <h2>
             {" "}
             Temperatura:
-            {data.main ? <p>{data.main.temp.toFixed()} ℃</p> : null}
+            {data.current ? (
+              <p>{data.current.temperature.toFixed()} ℃</p>
+            ) : null}
           </h2>
         </div>
 
         <h2>
           {" "}
           Odczuwalna temperatura:{" "}
-          {data.main ? <p>{data.main.feels_like} ℃</p> : null}
+          {data.current ? <p>{data.current.feelslike} ℃</p> : null}
         </h2>
 
         <div className="Humdity">
           <h2>
             Wilgotność:
-            {data.main ? <p className="bold">{data.main.humidity}%</p> : null}
+            {data.current ? (
+              <p className="bold">{data.current.humidity}%</p>
+            ) : null}
           </h2>
         </div>
 
         <div className="wind">
           <h2>
             Szybkość wiatru:
-            {data.wind ? (
-              <p className="bold">{data.wind.speed.toFixed()} MPH</p>
+            {data.current ? (
+              <p className="bold">{data.current.wind_speed.toFixed()} MPH</p>
             ) : null}
             <img className="img-fluid" src={cityIcon}></img>
           </h2>
@@ -97,4 +101,4 @@ function WeatherFromIMGW() {
   );
 }
 
-export default WeatherFromIMGW;
+export default Weatherstack;

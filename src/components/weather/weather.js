@@ -16,9 +16,9 @@ function Weather() {
             <h1> Weather Api </h1>
           </button>
         </Link>
-        <Link to="/IMGW">
+        <Link to="/Weatherstack">
           <button className="col-3 weatherButton  rounded border border-dark brightenedDark">
-            <h1> IMGW </h1>
+            <h1> Weatherstack </h1>
           </button>
         </Link>
         <Link to="/OpenMeteo">
