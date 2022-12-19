@@ -8,3 +8,15 @@
   display: flex;
   flex-direction: row;
 }
+
+.weatherButton {
+  background-color: bisque;
+  width: 100%;
+}
+
+.brightenedDark:hover {
+  filter: brightness(0.7);
+}
+
+.weatherButtons {
+}

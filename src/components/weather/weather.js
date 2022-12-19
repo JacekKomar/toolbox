@@ -21,6 +21,21 @@ function Weather() {
 
   return (
     <div className="container mb-5">
+      <div className="weatherTable rounded border border-dark mb-2 weatherButtons">
+        <button className="col-3 weatherButton  rounded border border-dark brightenedDark">
+          <h1> OpenWeather </h1>
+        </button>
+        <button className="col-3 weatherButton  rounded border border-dark brightenedDark">
+          <h1> Weather Api </h1>
+        </button>
+        <button className="col-3 weatherButton  rounded border border-dark brightenedDark">
+          <h1> IMGW </h1>
+        </button>
+        <button className="col-3 weatherButton  rounded border border-dark brightenedDark">
+          <h1> Open Meteo </h1>
+        </button>
+      </div>
+
       <h1>
         <input
           value={location}
