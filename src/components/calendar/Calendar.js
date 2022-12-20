@@ -1,6 +1,8 @@
 import React from "react";
 import "../../css/calendar.scss";
-export default class Calendar extends React.Component {
+import Calendar from "react-calendar";
+
+export default class MyCalendar extends React.Component {
   render() {
     return (
       <div className="container">

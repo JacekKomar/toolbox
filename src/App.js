@@ -1,5 +1,5 @@
 import Calculator from "./components/calculator/Calculator";
-import Calendar from "./components/calendar/Calendar";
+import MyCalendar from "./components/calendar/Calendar";
 import DayPlan from "./components/dayPlan/DayPlan";
 import Weather from "./components/weather/weather";
 import "./css/Header.scss";
@@ -38,7 +38,7 @@ function App() {
             </Route>
 
             <Route path="/calendar">
-              <Calendar />
+              <MyCalendar />
             </Route>
             <Route path="/dayplan">
               <DayPlan />
