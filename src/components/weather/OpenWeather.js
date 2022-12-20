@@ -32,17 +32,19 @@ function WeatherFromOpenWeather() {
         ></input>
       </h1>
       <div className="weatherTable rounded border border-dark mb-2">
-        <h1 className="nameAndCountryWeather">
-          Aktualna pogoda dla:
-          {data ? <p> {data.name}</p> : null}
-          {data.sys ? (
-            <p>
-              {"  "}
-              {"("}
-              {data.sys.country}
-              {")"}
-            </p>
-          ) : null}
+        <h1 className="">
+          <div className="nameAndCountryWeather">
+            <p> Aktualna pogoda dla: </p>
+            {data ? <p> {data.name}</p> : null}
+            {data.sys ? (
+              <p>
+                {"  "}
+                {"("}
+                {data.sys.country}
+                {")"}
+              </p>
+            ) : null}
+          </div>
         </h1>
       </div>
 

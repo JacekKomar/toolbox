@@ -31,18 +31,20 @@ function WeatherFromWeatherApi() {
           className="weatherTable rounded border border-dark col-12"
         ></input>
       </h1>
-      <div className="weatherTable rounded border border-dark mb-2">
-        <h1 className="nameAndCountryWeather">
-          Aktualna pogoda dla:
-          {data.location ? <p> {data.location.name}</p> : null}
-          {data.location ? (
-            <p>
-              {"  "}
-              {"("}
-              {data.location.country}
-              {")"}
-            </p>
-          ) : null}
+      <div className="weatherTable rounded border border-dark mb-2 ">
+        <h1>
+          <div className="nameAndCountryWeather">
+            <p> Aktualna pogoda dla:</p>
+            {data.location ? <p> {data.location.name}</p> : null}
+            {data.location ? (
+              <p>
+                {"  "}
+                {"("}
+                {data.location.country}
+                {")"}
+              </p>
+            ) : null}
+          </div>
         </h1>
       </div>
 
