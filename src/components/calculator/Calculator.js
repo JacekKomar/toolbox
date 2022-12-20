@@ -22,9 +22,9 @@ function Calculator() {
     {}
   );
   return (
-    <div className="container">
-      <div className="calculatorTable rounded border border-dark text-center">
-        <h1> Kalkulator </h1>
+    <div className="container col-12">
+      <div className="calculatorTable rounded border border-dark text-center ">
+        <h1 className=""> Kalkulator </h1>
       </div>
       <div className="calculatorTable rounded border border-dark mt-2 mb-5">
         <div className="calculator-grid p-5">
