@@ -4,10 +4,10 @@
 
 .calculator-grid {
   display: grid;
+  justify-content: center;
 
   grid-template-columns: repeat(4, 7rem);
   grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
-  justify-content: right;
 }
 
 .span-two {
@@ -16,7 +16,7 @@
 
 .output {
   grid-column: 1/-1;
-  background-color: rgb(201, 132, 107);
+  background-color: wheat;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -24,6 +24,7 @@
   padding: 0.75rem;
   word-wrap: break-word;
   word-break: break-all;
+  border: 1px solid white;
 }
 
 .output .previous-operand {
@@ -32,7 +33,6 @@
 
 .output .current-operand {
   color: azure;
-  // font-size: 2.5rem;
 }
 
 .calculator-grid > button {
@@ -40,7 +40,7 @@
   font-size: 2rem;
   border: 1px solid white;
   outline: none;
-  background-color: wheat;
+  background-color: rgb(238, 238, 135);
 }
 
 .calculator-grid > button:hover,
