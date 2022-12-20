@@ -12,7 +12,9 @@ const ReactCalendar = () => {
   return (
     <div className="">
       <div>
-        <Calendar onChange={onChange} value={date} />
+        <Calendar showWeekNumbers onChange={onChange} value={date} />
+        {console.log(date)}
+        {date.toString()}
       </div>
 
       <div id="root"></div>
