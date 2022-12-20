@@ -7,10 +7,12 @@ import Clock from "./components/Header/Clock";
 import { Switch, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Citation from "./components/Header/Citation.js";
+
 import WeatherFromOpenWeather from "./components/weather/OpenWeather.js";
 import Weatherstack from "./components/weather/Weatherstack.js";
-
 import WeatherFromWeatherApi from "./components/weather/WeatherApi";
+
+import ReactCalendar from "./components/calendar/CalendarAllContent";
 
 function App() {
   return (
@@ -31,7 +33,7 @@ function App() {
           </div>
           <Switch>
             <Route path="/calculator">
-              <Calculator a />
+              <Calculator />
             </Route>
             <Route path="/citation">
               <Citation />
@@ -40,6 +42,11 @@ function App() {
             <Route path="/calendar">
               <MyCalendar />
             </Route>
+
+            <Route path="/CalendarAllContent">
+              <ReactCalendar />
+            </Route>
+
             <Route path="/dayplan">
               <DayPlan />
             </Route>
