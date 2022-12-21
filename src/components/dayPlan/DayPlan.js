@@ -9,9 +9,16 @@ export default function DayPlan() {
       <div className="dayPlanTable rounded border border-dark text-center">
         <h1>Twój plan dnia:</h1>
       </div>
-
-      <div className="dayPlanTable rounded border border-dark mt-2">
-        co bedzie
+      <h1>
+        <input
+          type="text"
+          onChange={(event) => ustawText(event.target.value)}
+          className="dayPlanTable rounded border border-dark text-center mt-2 col-12"
+          placeholder="  Wpisz nazwę czynności:"
+        ></input>
+      </h1>
+      <div className="dayPlanTable rounded border border-dark mt-2 text-center">
+        <div>{mojText}</div>
       </div>
     </div>
   );
