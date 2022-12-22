@@ -12,8 +12,6 @@ import WeatherFromOpenWeather from "./components/weather/OpenWeather.js";
 import Weatherstack from "./components/weather/Weatherstack.js";
 import WeatherFromWeatherApi from "./components/weather/WeatherApi";
 
-import ReactCalendar from "./components/calendar/CalendarAllContent";
-
 // const el = document.querySelector("#citation");
 // el.innerHTML =
 
@@ -43,10 +41,6 @@ function App() {
 
             <Route path="/calendar">
               <MyCalendar />
-            </Route>
-
-            <Route path="/CalendarAllContent">
-              <ReactCalendar />
             </Route>
 
             <Route path="/dayplan">
