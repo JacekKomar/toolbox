@@ -1,3 +1,19 @@
-.calendarTable {
-  background-color: #bad978;
+.calendarColor {
+  background-color: rgb(166, 255, 0);
+  align-items: center;
+  text-align: center;
+}
+
+// .react-calendar {
+//   flex: 0 0 auto;
+//   width: 100%;
+//   -webkit-box-flex: 0;
+//   -ms-flex: 0 0 100%;
+//   flex: 0 0 100%;
+//   max-width: 100%;
+// }
+
+.calendarCenter {
+  margin-left: auto;
+  margin-right: auto;
 }

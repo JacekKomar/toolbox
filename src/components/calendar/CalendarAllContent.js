@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { render } from "react-dom";
 import Calendar from "react-calendar";
+import "../../css/calendar.scss";
+import "react-calendar/dist/Calendar.css";
 
 const ReactCalendar = () => {
   const [date, setDate] = useState(new Date());
@@ -10,17 +12,25 @@ const ReactCalendar = () => {
   };
 
   return (
-    <div className="">
-      <div>
-        <Calendar showWeekNumbers onChange={onChange} value={date} />
-        {console.log(date)}
-        {date.toString()}
-      </div>
+    <div className="calendarColor rounded border border-dark col-12 text-center">
+      <div className="">
+        <div className="">
+          <Calendar
+            className={"calendarCenter"}
+            showWeekNumbers
+            onChange={onChange}
+            value={date}
+          />
+        </div>
 
-      <div id="root"></div>
+        {console.log(date)}
+
+        {date.toString()}
+
+        <div id="root"></div>
+      </div>
     </div>
   );
-  render(<ReactCalendar />, document.getElementById("#root"));
 };
 
 export default ReactCalendar;
