@@ -6,13 +6,16 @@ import "./css/Header.scss";
 import Clock from "./components/Header/Clock";
 import { Switch, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
-import Citation from "./components/Header/Citation.js";
+import { quotes, AppCitation } from "./components/Header/Citation";
 
 import WeatherFromOpenWeather from "./components/weather/OpenWeather.js";
 import Weatherstack from "./components/weather/Weatherstack.js";
 import WeatherFromWeatherApi from "./components/weather/WeatherApi";
 
 import ReactCalendar from "./components/calendar/CalendarAllContent";
+
+// const el = document.querySelector("#citation");
+// el.innerHTML =
 
 function App() {
   return (
@@ -26,18 +29,17 @@ function App() {
               <Clock></Clock>
             </div>
 
-            <div className="citation">
-              {" Cytat dnia"}
-              <p>cos tam cos tam</p>
+            <div id="Citation" className="Citation">
+              <p></p>
             </div>
           </div>
           <Switch>
             <Route path="/calculator">
               <Calculator />
             </Route>
-            <Route path="/citation">
-              <Citation />
-            </Route>
+            {/* <Route path="/citation">
+              <Citation /> */}
+            {/* </Route> */}
 
             <Route path="/calendar">
               <MyCalendar />
