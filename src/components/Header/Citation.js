@@ -1,6 +1,6 @@
 import React from "react";
 
-function RenderingCitation() {
+export function RenderingCitation() {
   const quotes = [
     "Ludzie boją się zmian, nawet na lepsze- J. I. Kraszewski",
     "Ludzie, którzy tracą czas czekając, aż zaistnieją najbardziej sprzyjające warunki, nigdy nic nie zdziałają. Najlepszy czas na działanie jest teraz! - Mark Fisher",
@@ -12,12 +12,11 @@ function RenderingCitation() {
     "Umysł potrzebuje zaś książek, podobnie jak miecz potrzebuje kamienia do ostrzenia. - George R.R. Martin",
   ];
   const quoteShow = quotes[Math.floor(Math.random() * quotes.length)];
-  console.log(`${quoteShow}`);
 
   return <div>{JSON.stringify(quoteShow)}</div>;
 }
 
-function CitationApp() {
+export function CitationApp() {
   return <RenderingCitation />;
 }
 export default CitationApp;

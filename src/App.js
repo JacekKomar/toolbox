@@ -12,6 +12,8 @@ import WeatherFromOpenWeather from "./components/weather/OpenWeather.js";
 import Weatherstack from "./components/weather/Weatherstack.js";
 import WeatherFromWeatherApi from "./components/weather/WeatherApi";
 
+import { RenderingCitation, CitationApp } from "./components/Header/Citation";
+
 import { Link } from "react-router-dom";
 
 function App() {
@@ -71,6 +73,7 @@ function App() {
             </Route>
           </Switch>
         </div>
+        {/* <div>{JSON.stringify(quoteShow)}</div> */}
       </div>
     </div>
   );
