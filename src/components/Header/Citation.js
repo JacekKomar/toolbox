@@ -14,16 +14,9 @@ function RenderingCitation() {
   const quoteShow = quotes[Math.floor(Math.random() * quotes.length)];
   console.log(`${quoteShow}`);
 
-  const OneQuote = quotes.map((element) => {
-    return (
-      <ul>
-        <li>{element.quote}</li>
-        <li>{element.author}</li>
-      </ul>
-    );
-  });
-  return <li>{OneQuote}</li>;
+  return <div>{JSON.stringify(quoteShow)}</div>;
 }
+
 function CitationApp() {
   return <RenderingCitation />;
 }
