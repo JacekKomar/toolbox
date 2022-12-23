@@ -14,7 +14,7 @@ const ReactCalendar = () => {
 
   return (
     <div className="container">
-      <div className="CalendarTable rounded border border-dark text-center mb-2 mt-2">
+      <div className="CalendarTable rounded border border-dark text-center mb-2">
         <h1>Twój Kalendarz:</h1>
       </div>
 

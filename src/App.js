@@ -6,14 +6,13 @@ import "./css/Header.scss";
 import Clock from "./components/Header/Clock";
 import { Switch, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
-import { quotes, AppCitation } from "./components/Header/Citation";
+import Citation from "./components/Header/Citation";
 
 import WeatherFromOpenWeather from "./components/weather/OpenWeather.js";
 import Weatherstack from "./components/weather/Weatherstack.js";
 import WeatherFromWeatherApi from "./components/weather/WeatherApi";
 
-// const el = document.querySelector("#citation");
-// el.innerHTML =
+import { Link } from "react-router-dom";
 
 function App() {
   return (
@@ -28,6 +27,10 @@ function App() {
             </div>
 
             <div id="Citation" className="Citation">
+              <div id="CitatDiv" className="CitatDiv">
+                <Link to="/citation">www</Link>
+              </div>
+
               <p></p>
             </div>
           </div>
@@ -35,9 +38,10 @@ function App() {
             <Route path="/calculator">
               <Calculator />
             </Route>
-            {/* <Route path="/citation">
-              <Citation /> */}
-            {/* </Route> */}
+
+            <Route path="/Citation">
+              <Citation />
+            </Route>
 
             <Route path="/calendar">
               <MyCalendar />

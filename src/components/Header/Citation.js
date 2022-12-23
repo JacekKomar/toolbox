@@ -1,62 +1,59 @@
-import React, { useState } from "react";
-import "../../css/quotes.scss";
+import React from "react";
 
-export const quotes = [
-  {
-    quote:
-      "One of my most productive days was throwing away 1,000 lines of code.",
-    cite: "Ken Thompson",
-  },
-  {
-    quote:
-      "I have always wished for my computer to be as easy to use as my telephone; my wish has come true because I can no longer figure out how to use my telephone.",
-    cite: "Bjarne Stroustrup",
-  },
-  {
-    quote: "When in doubt, use brute force.",
-    cite: "Ken Thompson",
-  },
-  {
-    quote: "Talk is cheap. Show me the code.",
-    cite: "Linus Torvalds",
-  },
-  {
-    quote:
-      "Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live.",
-    cite: "Martin Golding",
-  },
-  {
-    quote:
-      "Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program.",
-    cite: "Linus Torvalds",
-  },
-  {
-    quote:
-      "Most software today is very much like an Egyptian pyramid with millions of bricks piled on top of each other, with no structural integrity, but just done by brute force and thousands of slaves.",
-    cite: "Alan Kay",
-  },
-  {
-    quote:
-      "Most of you are familiar with the virtues of a programmer. There are three, of course: laziness, impatience, and hubris",
-    cite: "Larry Wall",
-  },
-  {
-    quote:
-      "First learn computer science and all the theory. Next develop a programming style. Then forget all that and just hack.",
-    cite: "George Carrette",
-  },
-];
-export default function AppCitation() {
-  const [index, setIndex] = useState();
-  const generate = () => {
-    const index = Math.floor(Math.random() * quotes.length);
-    setIndex(index);
-  };
-  return (
-    <div className="Citation">
-      <button onClick={generate}>generate</button>
-      <p>{quotes[index] && quotes[index].quote}</p>
-      <p>{quotes[index] && quotes[index].cite}</p>
-    </div>
-  );
+function RenderingCitation() {
+  const quotes = [
+    {
+      quote: "Ludzie boją się zmian, nawet na lepsze.",
+      author: "J. I. Kraszewski",
+    },
+    {
+      quote:
+        "Ludzie, którzy tracą czas czekając, aż zaistnieją najbardziej sprzyjające warunki, nigdy nic nie zdziałają. Najlepszy czas na działanie jest teraz!.",
+      author: "Mark Fisher",
+    },
+    {
+      quote:
+        "W życiu nie chodzi o czekanie, aż burza minie… Chodzi o to, by nauczyć się tańczyć w deszczu.",
+      author: "Vivian Green",
+    },
+    {
+      quote:
+        "Sposobem na zaczęcie jest skończenie mówienia i podjęcie działania.",
+      author: "Walt Disney",
+    },
+    {
+      quote:
+        "Żadne zadanie nie jest szczególnie trudne, jeśli podzielisz je na mniejsze podzadania.",
+      author: "Henry Ford",
+    },
+    {
+      quote:
+        "Pamiętaj, że kiedy potrzebujesz pomocnej dłoni – jest ona na końcu twojego ramienia.",
+      author: "Audrey Hepburn",
+    },
+    {
+      quote:
+        "Tylko ci, którzy ryzykują pójście za daleko dowiedzą się jak daleko można dojść.",
+      author: "T.S. Eliot",
+    },
+    {
+      quote:
+        "Umysł potrzebuje zaś książek, podobnie jak miecz potrzebuje kamienia do ostrzenia.",
+      author: "George R.R. Martin",
+    },
+  ];
+
+  const OneQuote = quotes.map((element) => {
+    return (
+      <ul>
+        <li>{element.quote}</li>
+        <li>{element.author}</li>
+      </ul>
+    );
+  });
+  return <li>{OneQuote}</li>;
 }
+function CitationApp() {
+  return <RenderingCitation />;
+}
+export default CitationApp;
