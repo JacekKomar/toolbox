@@ -18,7 +18,7 @@ function Weather() {
         </Link>
         <Link to="/Weatherstack">
           <button className="col-4 weatherButton  rounded border border-dark brightenedDark">
-            <h1> Weatherstack </h1>
+            <h1> Weather stack </h1>
           </button>
         </Link>
       </div>
