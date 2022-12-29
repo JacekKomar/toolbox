@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/toolbox/static/css/main.d4c4f934.css",
-    "main.js": "/toolbox/static/js/main.36e2eb86.js",
+    "main.css": "/toolbox/static/css/main.a1724463.css",
+    "main.js": "/toolbox/static/js/main.82093e5f.js",
     "static/media/cityIcon.png": "/toolbox/static/media/cityIcon.012c4a3d955a87bcbfb3.png",
     "static/media/weatherIcon.png": "/toolbox/static/media/weatherIcon.4aec4b40c0c70dfcbdf0.png",
     "static/media/dayPlanIcon.png": "/toolbox/static/media/dayPlanIcon.e07bf25b7202574c835c.png",
     "static/media/calendarIcon.png": "/toolbox/static/media/calendarIcon.f51a6d093390da3465c8.png",
     "index.html": "/toolbox/index.html",
-    "main.d4c4f934.css.map": "/toolbox/static/css/main.d4c4f934.css.map",
-    "main.36e2eb86.js.map": "/toolbox/static/js/main.36e2eb86.js.map"
+    "main.a1724463.css.map": "/toolbox/static/css/main.a1724463.css.map",
+    "main.82093e5f.js.map": "/toolbox/static/js/main.82093e5f.js.map"
   },
   "entrypoints": [
-    "static/css/main.d4c4f934.css",
-    "static/js/main.36e2eb86.js"
+    "static/css/main.a1724463.css",
+    "static/js/main.82093e5f.js"
   ]
 }
