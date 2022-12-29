@@ -24,11 +24,11 @@ function App() {
           <Header />
           <img src="" alt="" />
           <div className="ClockAndCitation">
-            <div className="App">
+            <div className="App col-6">
               <Clock></Clock>
             </div>
 
-            <div id="Citation" className="Citation">
+            <div id="Citation" className="Citation col-6">
               <div id="CitatDiv" className="CitatDiv">
                 <Link to="/citation">www</Link>
               </div>
