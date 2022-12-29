@@ -1,6 +1,7 @@
 .displayofHeaders {
   display: flex;
   flex-direction: row;
+  // flex-wrap: wrap;
 }
 
 .ChooseSite {
@@ -13,18 +14,9 @@
   color: black;
 }
 
-.menuInIndex {
-  background-color: antiquewhite;
-}
-
 .citation {
   align-items: right;
   margin-left: 800px;
-}
-
-.mainPage {
-  display: flex;
-  flex-direction: row;
 }
 
 .brightened:hover {

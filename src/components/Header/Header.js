@@ -11,16 +11,11 @@ import weatherIcon from "./HeaderImages/weatherIcon.png";
 export default class Header extends React.Component {
   render() {
     return (
-      <div className="container">
+      <div className="container col-12">
         <div className="row">
-          <div className="menuInIndex"></div>
-
-          <div className="mainPage">
-            <div className="displayofHeaders p-2">
-              <Link
-                to="/calculator"
-                className="ChooseSite col-lg-3 col-md-6 p-4 mr-1 border border-dark rounded brightened"
-              >
+          <div className="displayofHeaders p-2 ">
+            <div className="ChooseSite col-lg-3 col-md-6 p-4 mr-1 border border-dark rounded brightened">
+              <Link to="/calculator" className=" ChooseSite">
                 <h1 className="nameParagraf text-center">
                   Wybierz: Kalkulator
                 </h1>
@@ -31,11 +26,10 @@ export default class Header extends React.Component {
                   obliczeń matematycznych.
                 </p>
               </Link>
+            </div>
 
-              <Link
-                to="/calendar"
-                className=" ChooseSite col-lg-3 col-md-6 p-4 mr-1 border border-dark rounded brightened"
-              >
+            <div className=" ChooseSite col-lg-3 col-md-6 p-4 mr-1 border border-dark rounded brightened">
+              <Link to="/calendar" className=" ChooseSite ">
                 <h1 className="nameParagraf text-center">Wybierz: Kalendarz</h1>
                 <img className="img-fluid" src={calendarIcon}></img>
                 <p className="descriptionOfLinks text-center mt-2">
@@ -43,11 +37,10 @@ export default class Header extends React.Component {
                   wydarzenia.
                 </p>
               </Link>
+            </div>
 
-              <Link
-                to="/dayPlan"
-                className="ChooseSite col-lg-3 col-md-6 p-4 mr-1 border border-dark rounded brightened"
-              >
+            <div className="ChooseSite col-lg-3 col-md-6 p-4 mr-1 border border-dark rounded brightened">
+              <Link to="/dayPlan" className="ChooseSite">
                 <h1 className="nameParagraf text-center">Wybierz: Plan dnia</h1>
                 <img className="img-fluid" src={dayPlanIcon} />
                 <p className="descriptionOfLinks text-center mt-2">
@@ -56,11 +49,10 @@ export default class Header extends React.Component {
                   swoich potrzeb plan dnia.
                 </p>
               </Link>
+            </div>
 
-              <Link
-                to="/weather"
-                className="ChooseSite col-lg-3 col-md-6 mr-1 p-4 border border-dark rounded brightened"
-              >
+            <div className="ChooseSite col-lg-3 col-md-6 mr-1 p-4 border border-dark rounded brightened">
+              <Link to="/weather" className="ChooseSite ">
                 <h1 className="nameParagraf text-center">
                   Wybierz: Aktualna pogoda
                 </h1>
