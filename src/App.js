@@ -29,8 +29,8 @@ function App() {
             </div>
 
             <div id="Citation" className="Citation col-6">
-              <div id="CitatDiv" className="CitatDiv">
-                <Link to="/citation">www</Link>
+              <div id="CitatDiv" className="CitatDiv mt-3">
+                <Citation />
               </div>
 
               <p></p>

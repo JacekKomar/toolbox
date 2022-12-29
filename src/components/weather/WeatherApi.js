@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../../css/weather.scss";
 import cityIcon from "./weatherImages/cityIcon.png";
 import axios from "axios";
+import WeatherMenu from "./WeatherMenu";
 
 function WeatherFromWeatherApi() {
   const [data, setData] = useState({});
@@ -21,6 +22,7 @@ function WeatherFromWeatherApi() {
 
   return (
     <div className="container mb-5">
+      <WeatherMenu />
       <h1>
         <input
           value={location}
