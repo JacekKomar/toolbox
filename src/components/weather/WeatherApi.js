@@ -8,7 +8,7 @@ function WeatherFromWeatherApi() {
   const [data, setData] = useState({});
   const [location, setLocation] = useState("");
 
-  const url = `http://api.weatherapi.com/v1/current.json?key=f615d211edcf4471839172333221912&q=${location}&aqi=no`;
+  const url = `https://api.weatherapi.com/v1/current.json?key=f615d211edcf4471839172333221912&q=${location}&aqi=no`;
 
   const searchLocation = (event) => {
     if (event.key === "Enter") {

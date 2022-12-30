@@ -8,7 +8,7 @@ function Weatherstack() {
   const [data, setData] = useState({});
   const [location, setLocation] = useState("");
 
-  const url = `http://api.weatherstack.com/current?access_key=cf43e74439b1c045ae9059aa7dbea426&query=${location}`;
+  const url = `https://api.weatherstack.com/current?access_key=cf43e74439b1c045ae9059aa7dbea426&query=${location}`;
 
   const searchLocation = (event) => {
     if (event.key === "Enter") {
