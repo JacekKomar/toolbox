@@ -1,6 +1,7 @@
 import React from "react";
 import "../../css/dayPlan.scss";
 import DayPlanForm from "./DayPlanForm";
+import TodoList from "./DayPlanList";
 
 export default function DayPlan() {
   return (
@@ -10,7 +11,7 @@ export default function DayPlan() {
       </div>
       <h1>
         <div className="dayPlanTable rounded border border-dark text-center mt-2 col-12">
-          <DayPlanForm />
+          <TodoList />
         </div>
       </h1>
     </div>
