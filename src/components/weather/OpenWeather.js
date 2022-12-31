@@ -20,6 +20,14 @@ function WeatherFromOpenWeather() {
     }
   };
 
+  document.getElementById("button").addEventListener("click", function () {
+    axios.get(url).then((response) => {
+      setData(response.data);
+      console.log(response.data);
+    });
+    setLocation("");
+  });
+
   return (
     <div className="container mb-5">
       <WeatherMenu />
@@ -33,6 +41,15 @@ function WeatherFromOpenWeather() {
           className="weatherTable rounded border border-dark col-12"
         ></input>
       </h1>
+      <input
+        id="button"
+        type="submit"
+        name="button"
+        value="enter"
+        onChange={(event) => setLocation(event.target.value)}
+        // onClick={searchLocationButton}
+      />
+
       <div className="weatherTable rounded border border-dark mb-2">
         <h1 className="">
           <div className="nameAndCountryWeather">
