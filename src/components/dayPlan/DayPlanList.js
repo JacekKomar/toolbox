@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import TodoForm from "./DayPlanForm";
 import Todo from "./DayPlanToDo";
+import "../../css/dayPlan.scss";
 
 function TodoList() {
   const [todos, setTodos] = useState([]);
@@ -41,9 +42,11 @@ function TodoList() {
   };
 
   return (
-    <div>
-      <h1>Jakie zadania na dziś ?</h1>
-      <TodoForm onSubmit={addTodo} />
+    <div className="container col-12">
+      <div className="dayPlanTable rounded border border-dark text-center  mt-2 ">
+        <h1>Jakie zadania na dziś ?</h1>
+        <TodoForm onSubmit={addTodo} />
+      </div>
       <Todo
         todos={todos}
         completeTodo={completeTodo}

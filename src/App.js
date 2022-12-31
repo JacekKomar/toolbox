@@ -69,11 +69,10 @@ function App() {
             </Route>
 
             <Route path="/">
-              <h1>Witaj podróżniku!</h1>
+              <h1>Witaj użytkowniku, wybierz stronę dla siebie !</h1>
             </Route>
           </Switch>
         </div>
-        {/* <div>{JSON.stringify(quoteShow)}</div> */}
       </div>
     </div>
   );

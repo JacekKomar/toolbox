@@ -13,10 +13,8 @@ function DayPlan() {
         <h1>Twój plan dnia:</h1>
       </div>
       <h1>
-        <div className="dayPlanTable rounded border border-dark text-center mt-2 col-12">
-          <div className="todo-app">
-            <DayPlanList />
-          </div>
+        <div>
+          <DayPlanList />
         </div>
       </h1>
     </div>
