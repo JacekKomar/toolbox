@@ -38,7 +38,7 @@ function TodoForm(props) {
           />
           <button
             onClick={handleSubmit}
-            className="btn btn-warning col-12 border border-dark"
+            className="btn btn-warning col-12 border border-dark mb-3"
           >
             <h3> Zamień </h3>
           </button>
