@@ -42,11 +42,10 @@ function TodoList() {
   };
 
   return (
-    <div className="container col-12">
-      <div className="dayPlanTable rounded border border-dark text-center  mt-2 ">
-        <h1>Jakie zadania na dziś ?</h1>
-        <TodoForm onSubmit={addTodo} />
-      </div>
+    <div className="dayPlanTable rounded border border-dark text-center  mt-2 ">
+      <h1>Jakie zadania na dziś ?</h1>
+      <TodoForm onSubmit={addTodo} />
+
       <Todo
         todos={todos}
         completeTodo={completeTodo}

@@ -11,12 +11,11 @@ function DayPlan() {
   return (
     <div className="container">
       <div className="dayPlanTable rounded border border-dark text-center">
-        <h3>Twój plan dnia:</h3>
+        <h1>Twój plan dnia:</h1>
       </div>
       <h1>
-        <div>
-          <DayPlanList />
-        </div>
+        <DayPlanList />
+
         <div className="dayPlanTable rounded border border-dark text-center mb-5 mt-2">
           {" "}
           Wyzwanie codzienne:
