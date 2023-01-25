@@ -4,6 +4,13 @@
 
 Projekt opracowano w następujących językach i narzędziach: HTML, CSS, SCSS, JavaScript, Bootstrap oraz React. Kilka mniejszych projektów w ramach jednej strony. Są to kalkulator, plan dnia, pogoda i kalendarz. 
 
+## Plan dnia
+
+![](/Readme/4.png)
+
+Strona umożliwia dodanie zadań do wykonania. Dodatkowo jedno losując(tzw. "Wyzwanie dnia"). Każde zadanie może być usunięte z listy, bądź zmodyfikowane. 
+
+
 ## Kalkulator
 
 ![](/Readme/2.png)
@@ -15,12 +22,6 @@ Kalkulator umożliwiający proste obliczenia.
 ![](/Readme/3.png)
 
 Prosty kalendarz.
-
-## Plan dnia
-
-![](/Readme/4.png)
-
-Strona umożliwia dodanie zadań do wykonania. Dodatkowo jedno losując(tzw. "Wyzwanie dnia"). Każde zadanie może być usunięte z listy, bądź zmodyfikowane. 
 
 ## Pogoda
 
